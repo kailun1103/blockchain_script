@@ -11,5 +11,7 @@ def convert_date_to_timestamp(date):
     formatted_timestamp = int(dt_object.timestamp())
     return formatted_timestamp
 
-test = convert_date_to_timestamp('2023-10-05')
+test = convert_date_to_timestamp('2022-11-10')
 print(test)
+test2 = convert_date_to_timestamp('2022-11-11')
+print(test2)
