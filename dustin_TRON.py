@@ -2,9 +2,11 @@ import os
 import json
 import requests
 import csv
+import datetime
 
 # CSV文件路徑
-csv_file_path = "output.csv"
+formatted_datetime = datetime.datetime.now().strftime("%Y-%m-%d__%H.%M")
+csv_file_path = f"tron\\TRON_{formatted_datetime}.csv"
 
 # 打開CSV文件並寫入標題
 with open(csv_file_path, 'w', newline='') as csv_file:
